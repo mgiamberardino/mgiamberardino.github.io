@@ -1,0 +1,262 @@
+/**
+*
+* Custom Fonts
+*
+*/
+
+@font-face {
+    font-family: bebas-neue-regular;
+    src: url('assets/fonts/BebasNeue Regular.otf');
+}
+
+/**
+*
+* Custom icons
+*
+*/
+
+.faceicon {
+  background-image: url("assets/icons/facebook_logo.png");;
+}
+
+.instaicon{
+    background-image: url("assets/icons/instagram_logo.png");;
+  }
+
+div.main-container {
+   max-width: 100%;
+   width: calc(100% - 3rem);
+}
+
+header {
+    margin: 10px auto;
+}
+
+#logo {
+    width: 100%;
+}
+
+hr {
+    width: 75%;
+    border: none;
+    height: 1.5px;
+    background-color: #888; /* Modern Browsers */
+}
+
+#homeCarousel {
+    width: 100%;
+}
+
+#lookbook {
+    margin-bottom: 0.75rem;
+}
+
+#lookbook img {
+    width: 100%;
+    height: auto;
+}
+
+#shop img {
+    width: 100%;
+    height: auto;
+}
+
+#shop {
+    margin-top: 0.75rem;
+}
+
+/**
+* Social Section
+*/
+
+div#social {
+    margin-top: 20px;
+}
+
+div#social img {
+    margin: 10px;
+    width: 45px;
+}
+
+div#email {
+    font-style: italic;
+}
+
+video {
+  object-fit: cover;
+}
+
+
+/**
+* Menu section
+*/
+
+ul.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+    width: 50%;
+}
+
+ul.menu li{
+    display: inline-flex;
+    font-family: bebas-neue-regular, sans-serif;
+    width: calc(100% /5);
+    justify-content: center;
+}
+
+ul.menu li a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+ul.menu li.active a {
+    border-bottom: 2px rgb(196,157,129) solid;
+}
+
+ul.menu {
+    padding: 0;
+}
+
+ ul.menu li:hover:not(.active) {
+     border-bottom: 2px rgba(196,157,129, 0.6) solid;
+ }
+
+ ul a:hover {
+     text-decoration: none;
+ }
+
+/**
+* Subscribe section
+*/
+#subscribe {
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+#mce-EMAIL::placeholder {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#mce-EMAIL {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#subscribeButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #333;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*
+* Sidebar
+*/
+
+.toggle-button {
+    font-size: 5vw;
+    color: rgb(196,157,129);
+}
+
+.toggle-button:hover {
+    text-decoration: none;
+}
+
+nav#sidemenu ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav#sidemenu ul li{
+    font-family: bebas-neue-regular, sans-serif;
+}
+
+nav#sidemenu ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav#sidemenu ul li a {
+    border-bottom: 2px rgb(196,157,129) solid;
+}
+
+ nav#sidemenu ul a:hover {
+     text-decoration: none;
+ }
+ 
+body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+    background-color: rgba(196,157,129, 0.1);
+  }
+  
+  .slideout-menu-left {
+    left: 0;
+  }
+  
+  .slideout-menu-right {
+    right: 0;
+  }
+  
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #FFF; /* A background-color is required */
+    min-height: 100vh;
+  }
+  
+  .slideout-open,
+  .slideout-open body,
+  .slideout-open .slideout-panel {
+    overflow: hidden;
+  }
+  
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+
+/*
+* Mobile specific
+*/
+@media (max-width: 768px) {
+    #video {
+        margin-top: 0.75rem; 
+    }
+}
+
+/*
+* Desktop specific
+*/
+@media (min-width: 768px) {
+    #sectionsImages {
+        padding-left: 0;
+    }
+}
